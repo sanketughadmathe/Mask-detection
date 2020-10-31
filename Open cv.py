@@ -5,8 +5,7 @@ import cv2
 import numpy as np
 
 face_classifier = cv2.CascadeClassifier(cv2.data.haarcascades + "haarcascade_frontalface_default.xml")
-# model_name = load_model(r'C:\Users\RANVEER\Desktop\shiv\data sets\Emotion Classification\Emotion_little_vgg.h5')
-model_name = load_model('model_wo_tr.model')
+model_name = load_model('model.model')
 class_labels = ['Without Mask', 'With Mask']
 
 cap = cv2.VideoCapture(0)
