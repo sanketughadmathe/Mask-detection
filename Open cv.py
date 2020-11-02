@@ -5,7 +5,7 @@ import cv2
 import numpy as np
 
 face_classifier = cv2.CascadeClassifier(cv2.data.haarcascades + "haarcascade_frontalface_default.xml")
-model_name = load_model('https://github.com/sanketughadmathe/Mask-detection/tree/master/model.model')
+model_name = load_model('model.model')
 class_labels = ['Without Mask', 'With Mask']
 
 cap = cv2.VideoCapture(0)
